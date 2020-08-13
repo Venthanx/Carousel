@@ -1,0 +1,79 @@
+body {
+    background-color: grey;
+    margin: 0;
+}
+.wrap {
+    width: 800px;
+    height: 300px;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.item-list {
+    position: absolute;
+    width: 4800px;
+    height: 300px;
+    padding: 0;
+    list-style: none;
+}
+.item {
+    float: left;
+}
+.item img {
+    width: 800px;
+    height: 300px;
+}
+
+.item.active {
+    z-index: 10;
+}
+
+.btn {
+    position: absolute;
+    top: 115.5px;
+    width: 41px;
+    height: 69px;
+    z-index: 100;
+    cursor: pointer;
+    background-color: aqua;
+}
+
+#goPrevBtn {
+    background: url(../images/icon-slides.png) no-repeat -84px 50%;
+    left: 0;
+}
+#goPrevBtn:hover {
+    background-position: 0px 50%;
+}
+#goNextBtn {
+    background: url(../images/icon-slides.png) no-repeat -125px 50%;
+    right: 0;
+}
+#goNextBtn:hover {
+    background-position: -43px 50%;
+}
+
+.point-list {
+    list-style: none;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+
+    z-index: 100;
+}
+
+.point {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    float: left;
+    margin-right: 14px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.point.active {
+    background-color: rgba(245, 238, 238, 0.5);
+}
